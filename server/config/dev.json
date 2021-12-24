@@ -1,0 +1,31 @@
+{
+     "server": {
+         "PORT": 4200
+     },
+     "cors": {
+         "urls": ["http://localhost:3000"],
+         "credentials": true,
+         "allowedHeaders":["Content-Type", "Authorization"],
+         "methods":["GET", "POST", "PUT", "PATCH", "DELETE"],
+         "exposedHeaders":[]
+     },
+     "database":{
+         "connectionString": "mongodb://127.0.0.1:27017/",
+         "databaseName": "books"
+     },
+     "jsonwebtoken": {
+         "refreshSecret":"random1",
+         "accessSecret": "random",
+         "algorithm": "HS256",
+         "algorithms": ["HS256", "HS384"],
+         "refreshExpiresIn": "1h",
+         "accessExpiresIn": "1h"
+     },
+     "bcryptRounds": 10,
+     "cookie":{
+         "refreshCookieName":"refreshCookie",
+         "accessCookieName":"accessCookie",
+         "httpOnly":true,
+         "maxAge": 31556926
+     }
+ }
