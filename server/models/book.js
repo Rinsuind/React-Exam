@@ -17,6 +17,10 @@ const bookModel = (Schema, model, ObjectId) => {
                 required: true,
                 type: Number,
             },
+            description: {
+                required: true,
+                type: String,
+            },
             creator: {
                 type: ObjectId,
                 ref: 'user',
