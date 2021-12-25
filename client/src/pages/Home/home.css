@@ -1,0 +1,22 @@
+.home {
+    display: flex;
+    justify-content: space-between;
+    padding: 5rem 2rem;
+}
+
+.media {
+    flex: 0 0 60%;
+    box-shadow: 0 0.5rem 2rem 0 rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--border-color);
+    overflow: hidden;
+}
+
+.media img {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: all 0.5s ease-in;
+}
+.media img:hover {
+    transform: scale(1.05);
+}

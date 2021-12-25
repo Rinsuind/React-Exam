@@ -1,0 +1,72 @@
+.site-forms {
+    background-color: var(--main-bg-color);
+    border-radius: 0.2rem;
+    box-shadow: 0 0.5rem 1.5rem 0 var(--border-color);
+    padding: 3.5rem;
+    border: 1px solid var(--border-color);
+    color: var(--nav-footer-color);
+    position: relative;
+}
+.logo-container {
+    width: 25%;
+    margin: 0 auto;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.form-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    padding-top: 3rem;
+}
+.form-header h2 {
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem 0;
+}
+
+label {
+    font-size: 1.2rem;
+}
+input,
+textarea {
+    background-color: #23252a;
+    border: none;
+    caret-color: var(--border-color);
+    width: 30rem;
+    padding: 1rem 1rem;
+    border-radius: 0.2rem;
+    color: var(--nav-footer-color);
+    transition: box-shadow 0.1s ease-out;
+}
+input:focus,
+textarea:focus {
+    box-shadow: 0 0 1rem 1px var(--border-color);
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+textarea {
+    resize: none;
+    height: 10rem;
+    outline: 0px none transparent;
+}
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}

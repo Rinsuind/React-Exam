@@ -1,0 +1,15 @@
+.site-logo {
+    width: 7rem;
+}
+.header {
+    border-bottom: 1px solid var(--border-color);
+}
+
+.nav-container {
+    max-width: 140rem;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+}

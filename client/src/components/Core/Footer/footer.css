@@ -1,0 +1,11 @@
+.site-footer {
+    margin-top: auto;
+    background-color: var(--main-bg-color);
+    border-top: 1px solid var(--border-color);
+    padding: 2rem;
+}
+
+.footer-wrapper {
+    max-width: 140rem;
+    margin: 0 auto;
+}

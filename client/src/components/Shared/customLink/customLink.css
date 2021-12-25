@@ -1,0 +1,7 @@
+.custom-link a {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+.active {
+    color: #d0f4fe;
+}

@@ -1,0 +1,10 @@
+.register {
+    margin: 4rem 0;
+}
+
+input.invalid {
+    box-shadow: 0 0 0 0.1rem #e03131;
+}
+input.correct {
+    box-shadow: 0 0 0 0.1rem #2f9e44;
+}

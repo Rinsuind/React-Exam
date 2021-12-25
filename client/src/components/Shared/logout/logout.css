@@ -1,0 +1,7 @@
+.logout button {
+    background-color: inherit;
+    color: var(--nav-footer-color);
+    text-transform: uppercase;
+    font-weight: 500;
+    font: inherit;
+}

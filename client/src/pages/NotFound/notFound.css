@@ -1,0 +1,29 @@
+.not-found {
+    font-size: 5rem;
+    color: #c586c0;
+    padding: 15rem 0;
+}
+
+.take-me-home {
+    text-decoration: underline;
+    color: #dcdcaa;
+}
+.brackets {
+    color: #ffd709;
+}
+
+.found {
+    color: #4fc1ff;
+}
+
+.point {
+    color: #fff;
+}
+
+.curly {
+    color: #ffd709;
+}
+
+.err {
+    color: #ce8349;
+}

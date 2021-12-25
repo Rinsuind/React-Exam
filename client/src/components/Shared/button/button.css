@@ -1,0 +1,14 @@
+.button {
+    padding: 1rem 2rem;
+    margin-top: 0.5rem;
+    background-color: #087f5b;
+    color: #e6fcf5;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border-radius: 0.2rem;
+    transition: all 0.3s ease-in;
+}
+.button:hover,
+.button:focus {
+    background-color: #0ca678;
+}
