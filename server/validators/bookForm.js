@@ -9,7 +9,7 @@ const bookForm = (body) => {
                 ? true
                 : Promise.reject('ImageUrl must start with http:// or https://')
         ),
-        body('price').custom((price) => (price < 0 ? Promise.reject('Price can not be a negative number') : true)),
+        body('price').custom((price) => (price <= 0 ? Promise.reject('Price can not be a negative number') : true)),
         body('description').custom((x) =>
             x.length < 20 ? Promise.reject('Description must be at least 20 characters') : true
         ),
