@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600&display=swap');
+
+.book-details {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    border: 1px solid var(--nav-footer-color);
+    padding: 4rem;
+    gap: 5rem;
+    box-shadow: 0 0.5rem 1rem 0 var(--border-color);
+}
+
+.ar {
+    flex: 0 0 30%;
+    width: 35rem;
+    position: relative;
+    overflow: hidden;
+}
+.ar::after {
+    content: '';
+    display: block;
+    padding-top: calc((16 / 9) * 100 * 1%);
+    position: relative;
+}
+.ar::before {
+    content: 'BEST SALE';
+    display: block;
+    position: absolute;
+    z-index: 100;
+    background-color: #c92a2a;
+    top: 2%;
+    right: -9%;
+    color: #fff5f5;
+    padding: 0.5rem 2.5rem;
+    font-size: 1rem;
+    transform: rotate(45deg);
+}
+
+.ar img {
+    display: block;
+    width: auto;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content {
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 3.9rem;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    line-height: 1;
+    font-family: 'Cinzel', serif;
+    margin-bottom: 0.5rem;
+}
+.author {
+    margin-bottom: 2rem;
+}
+.price {
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: flex;
+    gap: 0.3rem;
+    margin-bottom: 5rem;
+}
+
+.price .big {
+    font-size: 4.5rem;
+    line-height: 1;
+}
+.description {
+    margin-bottom: 5rem;
+}
+
+.book-details-btn {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}

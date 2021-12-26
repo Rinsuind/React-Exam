@@ -1,0 +1,15 @@
+.create {
+    margin: 1rem 0;
+}
+
+.create input,
+.create textarea {
+    width: 40rem;
+}
+
+textarea.invalid {
+    box-shadow: 0 0 0 0.1rem #e03131;
+}
+textarea.correct {
+    box-shadow: 0 0 0 0.1rem #2f9e44;
+}

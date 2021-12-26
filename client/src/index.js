@@ -5,15 +5,19 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter } from 'react-router-dom';
 import { AuthProvider } from './context/auth';
+import { BookProvider } from './context/books';
 
 ReactDOM.render(
     <BrowserRouter>
         <React.StrictMode>
             <AuthProvider>
-                <App />
+                <BookProvider>
+                    <App />
+                </BookProvider>
             </AuthProvider>
         </React.StrictMode>
     </BrowserRouter>,
+
     document.getElementById('root')
 );
 

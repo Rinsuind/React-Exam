@@ -4,6 +4,11 @@ const inputTypes = (value) => {
         username: () => (value.length < 3 ? 'invalid' : 'correct'),
         password: () => (value.length < 5 ? 'invalid' : 'correct'),
         repeatPassword: (password) => (password !== value ? 'invalid' : 'correct'),
+        title: () => (value.length < 2 ? 'invalid' : 'correct'),
+        author: () => (value.length < 2 ? 'invalid' : 'correct'),
+        imageUrl: () => (/^http:\/\/|https:\/\/.+$/gm.test(value) ? 'correct' : 'invalid'),
+        price: () => (Number(value) <= 0 ? 'invalid' : 'correct'),
+        description: () => (value.length < 20 ? 'invalid' : 'correct'),
     };
 };
 

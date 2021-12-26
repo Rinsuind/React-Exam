@@ -1,0 +1,17 @@
+.edit-form input,
+.edit-form textarea {
+    width: 50rem;
+}
+
+.edit-form .form-header {
+    padding-top: 0;
+}
+
+.edit-btn {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+}
+.edit-btn Button {
+    width: 100%;
+}
