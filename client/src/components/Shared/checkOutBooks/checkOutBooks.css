@@ -1,0 +1,35 @@
+.checkOutBooks {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    column-gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
+    font-size: 2rem;
+    background-color: var(--main-bg-color);
+    padding: 2rem 0;
+    border: 1px solid var(--nav-footer-color);
+}
+
+.img-container {
+    width: 50%;
+}
+.img-container img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.checkOutBooks i {
+    cursor: pointer;
+    font-size: 3rem;
+}
+
+.remove-item {
+    font-size: 3rem;
+    color: #c92a2a;
+}

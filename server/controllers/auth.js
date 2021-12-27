@@ -40,13 +40,14 @@ const login = (req, res, next) => {
     }
 
     return UserModel.findOne({ email })
+        .populate('checkOutBooks')
         .then((user) => {
             return Promise.all([user, user ? user.passwordMatch(password) : undefined])
                 .then(([user, match]) => {
                     if (!match) {
                         return Promise.reject('Password do not match!');
                     }
-                    const { _id, email, username } = user;
+                    const { _id, email, username, boughtBooks, checkOutBooks } = user;
                     const accessesToken = createToken({ id: _id }, accessSecret, accessExpiresIn);
                     const refreshToken = createToken({ id: _id }, refreshSecret, refreshExpiresIn);
 
@@ -59,8 +60,7 @@ const login = (req, res, next) => {
                                 .status(200)
                                 .cookie(refreshCookieName, refreshToken, { maxAge: maxAge }, { httpOnly: httpOnly })
                                 .cookie(accessCookieName, accessesToken, { maxAge: maxAge }, { httpOnly: httpOnly })
-
-                                .json({ email, username, id: _id });
+                                .json({ email, username, id: _id, boughtBooks, checkOutBooks });
                         })
                         .catch((err) => next(err));
                 })

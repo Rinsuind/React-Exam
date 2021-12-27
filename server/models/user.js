@@ -18,7 +18,12 @@ const userModel = (Schema, model, bcrypt, bcryptRounds, ObjectId) => {
                 type: String,
                 required: true,
             },
-            BoughtBooks: [
+            boughtBooks: {
+                type: Number,
+                default: 0,
+            },
+
+            checkOutBooks: [
                 {
                     type: ObjectId,
                     ref: 'book',

@@ -4,7 +4,7 @@ import './notFound.css';
 const NotFound = () => {
     return (
         <article className='not-found'>
-            <p>
+            <div>
                 <span>
                     if (<span className='point'>!</span>
                     <span className='found'>found</span>) <span className='curly'>&#123;</span>
@@ -13,7 +13,7 @@ const NotFound = () => {
                     </p>
                     <span className='curly'>&#125;</span>
                 </span>
-            </p>
+            </div>
             <Link className='take-me-home' to='/'>
                 takeMeHome <span className='brackets'>()</span>
             </Link>

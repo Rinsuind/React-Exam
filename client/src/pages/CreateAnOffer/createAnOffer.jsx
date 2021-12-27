@@ -7,6 +7,7 @@ import { useNavigate } from 'react-router';
 import { BookContext } from '../../context/books';
 import customAxios from '../../axios';
 import { RESPONSE_FAIL } from '../../types';
+import requireAuth from '../../components/Hoc/authHoc';
 
 import './createAnOffer.css';
 
@@ -107,4 +108,4 @@ const CreateAnOffer = (props) => {
     );
 };
 
-export default CreateAnOffer;
+export default requireAuth(CreateAnOffer);

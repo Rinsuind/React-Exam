@@ -1,0 +1,24 @@
+.checkout {
+    height: 90vh;
+    margin-top: 10rem;
+}
+
+.checkout-actions {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    margin-top: 7rem;
+    gap: 3rem;
+}
+.checkout-total-price {
+    justify-self: end;
+    font-size: 4rem;
+}
+.checkout-total-price .mark {
+    font-size: 5rem;
+}
+.empty {
+    font-size: 7.2rem;
+    font-weight: 600;
+    letter-spacing: 5px;
+}

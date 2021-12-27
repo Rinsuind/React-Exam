@@ -9,7 +9,7 @@ const requireAuth = (ChildComponent) => {
 
         useEffect(() => {
             if (!auth.user) {
-                navigate('/login');
+                return navigate('/login');
             }
         }, [auth.user]);
 
