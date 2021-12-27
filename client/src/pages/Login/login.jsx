@@ -39,7 +39,7 @@ const Login = () => {
     }, [dispatch]);
 
     return (
-        <article className='site-forms login'>
+        <article className='site-forms login main-margin'>
             <div className='form-header'>
                 <div className='logo-container'>
                     <Logo />

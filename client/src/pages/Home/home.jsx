@@ -3,7 +3,7 @@ import mainImg from '../../assets/main-img.jpg';
 
 const Home = () => {
     return (
-        <article className='home'>
+        <article className='home main-margin'>
             <div className='site-header'>
                 <h1>Some Random text</h1>
             </div>

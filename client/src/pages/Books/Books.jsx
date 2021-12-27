@@ -5,7 +5,7 @@ import './Books.css';
 
 const Books = () => {
     return (
-        <article className='books'>
+        <article className='books main-margin'>
             <Outlet />
         </article>
     );

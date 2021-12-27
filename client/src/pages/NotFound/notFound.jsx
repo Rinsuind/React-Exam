@@ -3,7 +3,7 @@ import './notFound.css';
 
 const NotFound = () => {
     return (
-        <article className='not-found'>
+        <article className='not-found main-margin'>
             <div>
                 <span>
                     if (<span className='point'>!</span>

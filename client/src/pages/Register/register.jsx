@@ -40,7 +40,7 @@ const Register = () => {
     }, [dispatch]);
 
     return (
-        <article className='site-forms register'>
+        <article className='site-forms main-margin'>
             <div className='form-header'>
                 <div className='logo-container'>
                     <Logo />

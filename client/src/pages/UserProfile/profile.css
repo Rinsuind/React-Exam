@@ -1,0 +1,22 @@
+.profile {
+    background-color: var(--main-bg-color);
+    padding: 5rem 10rem;
+    border: 1px solid var(--nav-footer-color);
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 2rem;
+    justify-content: center;
+}
+.avatar i {
+    font-size: 20rem;
+}
+.avatar {
+    margin-bottom: 2rem;
+    align-self: center;
+}
+.action-container {
+    margin-top: 10rem;
+    align-self: center;
+}

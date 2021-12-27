@@ -39,7 +39,7 @@ const CreateAnOffer = (props) => {
 
     const handleOutOfFocus = (e) => (e.target.className = validator(e, ''));
     return (
-        <article className='site-forms create'>
+        <article className='site-forms create main-margin'>
             <div className='form-header'>
                 <h2>Create An Offer</h2>
                 <ErrorNotification />

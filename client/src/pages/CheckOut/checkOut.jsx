@@ -42,7 +42,7 @@ const CheckOut = () => {
     }
 
     return (
-        <article className='checkout'>
+        <article className='checkout main-margin'>
             {user ? arr : <p>Loading...</p>}
             {arr.length ? (
                 <div className='checkout-actions'>

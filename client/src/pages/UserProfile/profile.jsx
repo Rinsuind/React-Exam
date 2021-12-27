@@ -1,25 +1,32 @@
 import { useContext, useEffect } from 'react';
-import { BookContext } from '../../context/books';
 import { AuthContext } from '../../context/auth';
 import customAxios from '../../axios';
 import { RESPONSE_FAIL, RESPONSE_SUCCESS } from '../../types';
-
 import requireAuth from '../../components/Hoc/authHoc';
+import Button from '../../components/Shared/button/button';
 
 import './profile.css';
 
 const UserProfile = (props) => {
-    const { shelf, dispatch } = useContext(BookContext);
-    const { auth } = useContext(AuthContext);
+    const {
+        auth: {
+            user: { email, username, boughtBooks },
+        },
+    } = useContext(AuthContext);
 
-    useEffect(() => {
-        customAxios
-            .get('/books')
-            .then((response) => dispatch({ type: RESPONSE_SUCCESS, payload: response.data }))
-            .catch((err) => dispatch({ type: RESPONSE_FAIL, payload: err.response.data }));
-    }, []);
-
-    return <article className='profile'>{!shelf.books ? <p>Loading...</p> : <p></p>}</article>;
+    return (
+        <article className='profile main-margin'>
+            <div className='avatar'>
+                <i className='far fa-user-circle'></i>
+            </div>
+            <p>Email: {email}</p>
+            <p>User: {username}</p>
+            <p>Products Bought: {boughtBooks} Books</p>
+            <div className='action-container'>
+                <Button action='Reset Password' />
+            </div>
+        </article>
+    );
 };
 
 export default requireAuth(UserProfile);

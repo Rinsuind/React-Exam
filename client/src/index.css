@@ -23,3 +23,6 @@ code {
     color: var(--nav-footer-color);
     background-color: var(--main-bg-color);
 }
+.main-margin {
+    margin: 10rem 0;
+}
