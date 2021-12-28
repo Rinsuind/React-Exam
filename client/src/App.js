@@ -11,10 +11,12 @@ import BookShelf from './components/Shared/bookShelf/bookShelf';
 import CreateAnOffer from './pages/CreateAnOffer/createAnOffer';
 import UserProfile from './pages/UserProfile/profile';
 import CheckOut from './pages/CheckOut/checkOut';
+import getNewToken from './axios/auth/getToken';
 
 import './App.css';
 
 function App() {
+    setTimeout(getNewToken, 1799990);
     return (
         <div className='App' role='img' aria-label='blue background whit snowflakes'>
             <Header />

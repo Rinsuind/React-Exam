@@ -18,8 +18,8 @@
          "accessSecret": "random",
          "algorithm": "HS256",
          "algorithms": ["HS256", "HS384"],
-         "refreshExpiresIn": "1h",
-         "accessExpiresIn": "1h"
+         "refreshExpiresIn": "1y",
+         "accessExpiresIn": "30m"
      },
      "bcryptRounds": 10,
      "cookie":{
