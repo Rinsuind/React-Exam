@@ -5,7 +5,7 @@ const Footer = () => {
             <div className='footer-wrapper footer-grid'>
                 <div className='contacts'>
                     <h4>Contact Us</h4>
-                    <address class='contacts'>
+                    <address className='contacts'>
                         <p>623 Harrison St., 2nd Floor, San Francisco CA 94107</p>
                         <p>
                             <a href='tel:415-201-6370'>415-201-6370</a> <br />
@@ -65,15 +65,15 @@ const Footer = () => {
                             <i className='fab fa-facebook'></i>
                         </a>
                         <a href='#'>
-                            <i class='fab fa-twitter'></i>
+                            <i className='fab fa-twitter'></i>
                         </a>
                         <a href='#'>
-                            <i class='fab fa-instagram'></i>
+                            <i className='fab fa-instagram'></i>
                         </a>
                     </div>
 
-                    <p class='copyright'>
-                        Copyright &copy; <span class='year'></span> by Bookstore Inc. All rights reserved &reg;
+                    <p className='copyright'>
+                        Copyright &copy; <span className='year'></span> by Bookstore Inc. All rights reserved &reg;
                     </p>
                 </div>
             </div>
