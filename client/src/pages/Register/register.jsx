@@ -27,7 +27,7 @@ const Register = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            customAxios.post('auth/register', formState);
+            await customAxios.post('auth/register', formState);
             navigate('/login');
         } catch (err) {
             dispatch({ type: RESPONSE_FAIL, payload: err.response.data });
@@ -45,7 +45,7 @@ const Register = () => {
                 <div className='logo-container'>
                     <Logo />
                 </div>
-                <h2>Sign Up</h2>
+                <h2>Sign up</h2>
                 <ErrorNotification />
             </div>
 

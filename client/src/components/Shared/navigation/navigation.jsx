@@ -13,7 +13,7 @@ const Navigation = () => {
     const arr = [
         { name: 'create offer', path: 'new/book', status: true },
         { name: 'books', path: 'books', status: true },
-        { name: 'log in', path: 'login', status: false },
+        { name: 'login', path: 'login', status: false },
         { name: 'register', path: 'register', status: false },
         { name: 'profile', path: 'user/profile', status: true },
     ];

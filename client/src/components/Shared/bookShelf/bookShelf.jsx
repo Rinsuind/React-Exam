@@ -24,7 +24,7 @@ const BookShelf = () => {
         <div className='book-shelf'>
             <SearchForm handler={handleChange} />
             {!books ? (
-                <p>Loading</p>
+                <p>Loading...</p>
             ) : (
                 <div className='book-shelf-grid'>
                     {books

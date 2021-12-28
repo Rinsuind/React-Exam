@@ -15,3 +15,7 @@
 .edit-btn Button {
     width: 100%;
 }
+
+.edit-form-err {
+    text-align: center;
+}

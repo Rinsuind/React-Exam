@@ -14,7 +14,7 @@ const Home = () => {
                 <p>Join us in an amazing adventure of mysteries, fantasies, romances. Let your imagination run free.</p>
                 <div className='cta-container'>
                     {!auth.user ? (
-                        <Link className='cta' to='login'>
+                        <Link className='cta' to='register'>
                             Become a member
                         </Link>
                     ) : (

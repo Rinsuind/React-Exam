@@ -1,6 +1,5 @@
 import Button from '../button/button';
-import ErrorNotification from '../errorNotification/error';
-import { useContext } from 'react';
+import { useContext, useEffect } from 'react';
 import { BookContext } from '../../../context/books';
 import useForm from '../../../hooks/useRegister';
 import customAxios from '../../../axios';
@@ -30,10 +29,13 @@ const EditForm = ({ editBook }) => {
             dispatch({ type: RESPONSE_FAIL, payload: err.response.data });
         }
     };
+    useEffect(() => {
+        return () => dispatch({ type: RESPONSE_FAIL, payload: '' });
+    }, []);
 
     return (
         <article className='edit-form'>
-            <ErrorNotification />
+            <p className='globalErr edit-form-err'>{shelf.err}</p>
             <form className='form' onSubmit={handleSubmit}>
                 <div className='form-container'>
                     <label htmlFor='title'>Title</label>

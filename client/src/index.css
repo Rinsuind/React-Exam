@@ -26,3 +26,7 @@ code {
 .main-margin {
     margin: 10rem 0;
 }
+
+.globalErr {
+    color: #f03e3e;
+}

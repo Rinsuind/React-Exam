@@ -1,5 +1,5 @@
 import Button from '../../components/Shared/button/button';
-import ErrorNotification from '../../components/Shared/errorNotification/error';
+
 import useForm from '../../hooks/useRegister';
 import { validator } from '../../validators';
 import { useContext, useEffect } from 'react';
@@ -21,13 +21,13 @@ const initialValue = {
 
 const CreateAnOffer = (props) => {
     const navigate = useNavigate();
-    const { dispatch } = useContext(BookContext);
+    const { shelf, dispatch } = useContext(BookContext);
     const [formState, handleChange] = useForm(initialValue);
     const { title, author, imageUrl, price, description } = formState;
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            customAxios.post('books', formState);
+            const response = await customAxios.post('books', formState);
             navigate('/books');
         } catch (err) {
             dispatch({ type: RESPONSE_FAIL, payload: err.response.data });
@@ -42,7 +42,7 @@ const CreateAnOffer = (props) => {
         <article className='site-forms create main-margin'>
             <div className='form-header'>
                 <h2>Create An Offer</h2>
-                <ErrorNotification />
+                <p className='globalErr'>{shelf.err}</p>
             </div>
             <form className='form' onSubmit={handleSubmit}>
                 <div className='form-container'>
@@ -102,7 +102,7 @@ const CreateAnOffer = (props) => {
                         name='description'
                     />
                 </div>
-                <Button action='Create' />
+                <Button action='Create' handler={handleSubmit} />
             </form>
         </article>
     );
