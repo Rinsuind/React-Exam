@@ -8,6 +8,7 @@ import customAxios from '../../axios';
 import { useNavigate } from 'react-router';
 import { RESPONSE_SUCCESS, RESPONSE_FAIL, USER_STATUS } from '../../types';
 import { useEffect } from 'react';
+import publicPages from '../../components/Hoc/publicHoc';
 
 import './login.css';
 
@@ -68,4 +69,4 @@ const Login = () => {
     );
 };
 
-export default Login;
+export default publicPages(Login);

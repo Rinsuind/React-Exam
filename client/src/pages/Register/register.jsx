@@ -10,6 +10,7 @@ import { AuthContext } from '../../context/auth';
 import { RESPONSE_FAIL } from '../../types';
 import { useEffect } from 'react';
 import ErrorNotification from '../../components/Shared/errorNotification/error';
+import publicPages from '../../components/Hoc/publicHoc';
 
 const defaultState = {
     email: '',
@@ -102,4 +103,4 @@ const Register = () => {
     );
 };
 
-export default Register;
+export default publicPages(Register);
