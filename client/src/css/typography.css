@@ -7,3 +7,6 @@ html {
 h2 {
     font-size: 3.6rem;
 }
+textarea {
+    font-family: inherit;
+}
